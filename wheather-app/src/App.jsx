@@ -3,6 +3,13 @@ import './App.css'
 import axios from 'axios'
 
 function App() {
+  const date = new Date()
+  const datehours = date.getHours();
+  const dataminutes = date.getMinutes();
+  if(datehours > 12){
+    datehours
+  }
+  const ampm = datehours > 12 ? 'am' : "pm"
   const [wheathervalue, setwheathervalue] = useState('');
   async function CheckWeather(){
      try{
@@ -29,7 +36,7 @@ function App() {
        <button className='button-check' onClick={CheckWeather}> check</button>
        </div>
        <div className='wheather-output'>
-        <p className='paragraph1'>11:00 pm  13.7 °C     <span className=''></span></p>
+        <div className='paragraph1'> {`${datehours +" " + dataminutes +" "+ ampm}`}  13.7 °C icon</div>
         <div className='paragraphs'>
         <p> icon Feels like  12.7%</p>
         <p> icon Wind  14.5km/h</p>

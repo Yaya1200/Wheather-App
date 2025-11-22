@@ -46,8 +46,10 @@
 }
 .iconimage{
   background-image: url("https://openweathermap.org/img/wn/10d@2x.png");
-  width: 10px;
-  height: 10px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: inline-block;
 }
 .paragraph1{
 height: 30px;
