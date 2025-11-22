@@ -16,7 +16,8 @@ function App() {
 
   }
   function WeatherInput(e){
-    setwheathervalue(e.target.value);
+    let valueOfInput = e.target.value;
+    setwheathervalue(valueOfInput);
     console.log(wheathervalue);
   }
 
