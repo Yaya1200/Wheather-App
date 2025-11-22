@@ -1,5 +1,6 @@
 import express, { json } from 'express';
 import axios from 'axios';
+import cors from'cors';
 const app = express();
 app.use(express.json());
 const Port = 4000;
