@@ -13,12 +13,11 @@ function App() {
     console.error("error", error);
   }
   function CheckWeather(){
-
+    console.log(wheathervalue);
   }
   function WeatherInput(e){
-    let valueOfInput = e.target.value;
+    let valueOfInput = (e.target.value).toLowerCase();
     setwheathervalue(valueOfInput);
-    console.log(wheathervalue);
   }
 
   return (
@@ -27,7 +26,7 @@ function App() {
       <div>
         <p className='wheather-title'>wheather app</p>
        <input name='wheather-data' onChange={WeatherInput} className='wheather-input' placeholder="please enter the city's name"/> 
-       <button className='button-check'> check</button>
+       <button className='button-check' onClick={CheckWeather}> check</button>
        
        </div>
 
