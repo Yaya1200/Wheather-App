@@ -7,7 +7,7 @@ const API_KEY = "bcb4c192840ca20ed738fdc77f57d9cf";
 const city = "london";
 const API_LINK = "https://api.openweathermap.org/data/2.5/weather"
 
-app.get("/", async (req,res)=>{
+app.get("/data", async (req,res)=>{
   try{
   const response = await axios(API_LINK,{
     params:{
