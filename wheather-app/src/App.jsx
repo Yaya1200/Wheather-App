@@ -3,9 +3,13 @@ import './App.css'
 import axios from 'axios'
 
 function App() {
+  try{
   async()=>{
        const result = await axios.get("/data")
        console.log(result.data);
+  }}
+  catch(error){
+    console.error("error", error);
   }
 
   return (
