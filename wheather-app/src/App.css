@@ -35,9 +35,14 @@
    border-color: white;
 }
 .wheather-output{
-  width: 100px;
+  width: 300px;
   height: 400px;
-  
+  background-color: rgba(255, 255, 255, 0.888);
+  border-color: black;
+  border-radius: 5px;
+  align-self: center;
+  margin-left: 450px;
+  margin-top: 10px;
 }
 
 
