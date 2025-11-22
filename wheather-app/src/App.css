@@ -34,6 +34,11 @@
    cursor: pointer;
    border-color: white;
 }
+.wheather-output{
+  width: 100px;
+  height: 400px;
+  
+}
 
 
 
