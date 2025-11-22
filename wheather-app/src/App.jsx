@@ -26,8 +26,8 @@ function App() {
         <p className='wheather-title'>wheather app</p>
        <input name='wheather-data' onChange={WeatherInput} className='wheather-input' placeholder="please enter the city's name"/> 
        <button className='button-check' onClick={CheckWeather}> check</button>
-       
        </div>
+       <div className='wheather-output'>output</div>
 
     </div>
   )
