@@ -29,7 +29,7 @@ function App() {
        <button className='button-check' onClick={CheckWeather}> check</button>
        </div>
        <div className='wheather-output'>
-        <p>11:00 pm 13.7   icon</p>
+        <p>11:00 pm     13.7 °C     icon</p>
        </div>
 
     </div>

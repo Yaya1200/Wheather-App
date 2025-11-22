@@ -42,7 +42,14 @@
   border-radius: 5px;
   margin-left: 450px;
   margin-top: 10px;
-  
+  padding-top: 5px;
+}
+.wheather-output p{
+  height: 30px;
+  align-self: center;
+ border: 2px solid rgb(255, 255, 255);
+ border-radius: 5px;
+
 }
 
 
