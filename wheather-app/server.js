@@ -4,12 +4,13 @@ const app = express();
 app.use(express.json());
 const Port = 4000;
 const API_KEY = "bcb4c192840ca20ed738fdc77f57d9cf";
-const city = "london";
+
 const API_LINK = "https://api.openweathermap.org/data/2.5/weather"
 
-app.get("/data", async (req,res)=>{
+app.post("/data", async (req,res)=>{
   try{
-  const response = await axios(API_LINK,{
+    const city = req.body.city
+  const response = await axios.get(API_LINK,{
     params:{
       q:city,
       appid: API_KEY,
@@ -17,7 +18,7 @@ app.get("/data", async (req,res)=>{
     }
   });
   console.log(response.data);
-  res.json(response);
+  res.json(response.data);
 
 }
   catch(error)

@@ -4,15 +4,14 @@ import axios from 'axios'
 
 function App() {
   const [wheathervalue, setwheathervalue] = useState('');
-  try{
-  async()=>{
-       const result = await axios.post("/data", wheathervalue)
+  async function CheckWeather(){
+     try{
+       const result = await axios.post("/data", {city: wheathervalue})
        console.log(result.data);
-  }}
+  }
   catch(error){
     console.error("error", error);
   }
-  function CheckWeather(){
     console.log(wheathervalue);
   }
   function WeatherInput(e){
