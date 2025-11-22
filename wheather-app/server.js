@@ -22,7 +22,9 @@ app.get("/", async (req,res)=>{
 }
   catch(error)
   {
-    console.err("Error", err);
+    console.error("Error:", error.response?.data || error.message);
+    res.status(error.response?.status || 500).send(error.response?.data || "Error fetching the weather");
+
   }
 }
 )
