@@ -6,7 +6,7 @@ function App() {
   const [wheathervalue, setwheathervalue] = useState('');
   try{
   async()=>{
-       const result = await axios.get("/data")
+       const result = await axios.post("/data", wheathervalue)
        console.log(result.data);
   }}
   catch(error){
