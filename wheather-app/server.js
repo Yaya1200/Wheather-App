@@ -9,7 +9,7 @@ const API_LINK = "https://api.openweathermap.org/data/2.5/weather"
 
 app.post("/data", async (req,res)=>{
   try{
-    const city = req.body.city
+    const {city} = req.body
   const response = await axios.get(API_LINK,{
     params:{
       q:city,
