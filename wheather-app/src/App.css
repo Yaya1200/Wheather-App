@@ -37,7 +37,7 @@
 .wheather-output{
   width: 300px;
   height: 400px;
-  background-color: rgba(255, 255, 255, 0.888);
+  background-color: rgba(255, 255, 255, 0.5);
   border-color: black;
   border-radius: 5px;
   margin-left: 450px;
@@ -49,6 +49,7 @@
   align-self: center;
  border: 2px solid rgb(255, 255, 255);
  border-radius: 5px;
+ background-color: rgba(255, 255, 255, 1);
 
 }
 
