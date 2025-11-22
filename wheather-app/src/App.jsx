@@ -11,6 +11,7 @@ function App() {
   }
   catch(error){
     console.error("error", error);
+    alert("The city's name not found, please correct it.")
   }
     console.log(wheathervalue);
   }
