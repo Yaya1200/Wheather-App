@@ -3,7 +3,7 @@ import './App.css'
 import axios from 'axios'
 
 function App() {
-  const [wheathervalue, setwheathervalue] = useState();
+  const [wheathervalue, setwheathervalue] = useState('');
   try{
   async()=>{
        const result = await axios.get("/data")
@@ -15,8 +15,9 @@ function App() {
   function CheckWeather(){
 
   }
-  function WeatherInput(){
-     
+  function WeatherInput(e){
+    setwheathervalue(e.target.value);
+    console.log(wheathervalue);
   }
 
   return (
