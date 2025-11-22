@@ -2,6 +2,7 @@ import express, { json } from 'express';
 import axios from 'axios';
 import cors from'cors';
 const app = express();
+app.use(cors());
 app.use(express.json());
 const Port = 4000;
 const API_KEY = "bcb4c192840ca20ed738fdc77f57d9cf";
