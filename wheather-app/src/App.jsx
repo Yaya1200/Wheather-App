@@ -8,7 +8,7 @@ function App() {
       
       <div>
         <p className='wheather-title'>wheather app</p>
-       <input placeholder='please enter the city name'/> 
+       <input className='wheather-input' placeholder="please enter the city's name"/> 
        </div>
 
     </div>
