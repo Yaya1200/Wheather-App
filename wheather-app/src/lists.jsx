@@ -1,13 +1,13 @@
 function Returingwheather(prop){
     return(
       <div className='wheather-output'>
-        <div className='paragraph1'> {`${prop.datehours +":" + prop.dateminutes +" "+ prop.ampm}`}  {`${prop.temp}`}°C icon</div>
+        <div className='paragraph1'> <span>{`${prop.datehours +":" + prop.dateminutes +" "+ prop.ampm}`}</span>  <span>{`${prop.temp}`}°C</span> <span>icon</span></div>
         <div className='paragraphs'>
         <p> <span> icon</span>  <span>Feels like</span>  <span>{`${prop.feelsLike}`}°C</span></p>
-        <p> icon&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  Wind &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  {`${prop.wind}`}km/h</p>
-        <p>icon &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  humidity &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  {`${prop.humid}`}</p>
-        <p>icon &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  cloud cover &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  {`${prop.cloud}`}%</p>
-        <p> icon &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  pressure &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  {`${prop.pressure}`}Pa</p>
+        <p> <span>icon</span> <span>Wind</span><span>{`${prop.wind}`}km/h</span></p>
+        <p><span>icon</span><span>Humidity</span><span>{`${prop.humid}`}</span> </p>
+        <p><span>icon</span> <span>Cloud cover</span><span>{`${prop.cloud}`}%</span></p>
+        <p><span>icon</span><span>Pressure</span> <span>{`${prop.pressure}`}Pa</span></p>
         </div>
        </div>
     )
