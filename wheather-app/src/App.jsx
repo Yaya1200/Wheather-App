@@ -57,6 +57,7 @@ function App() {
               humid = {storeddata.main.humidity}
               cloud = {storeddata.clouds.all}
               pressure = {storeddata.main.pressure}
+              icon = {storeddata.weather[0].icon}
        /> : null
        
        }

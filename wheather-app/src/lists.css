@@ -1,0 +1,59 @@
+.icon0 {
+  width: 30px;            
+  height: 30px;           
+  display: inline-block;  
+  margin-bottom: 100px;
+  background-size: cover;
+  background-color: rgba(0, 0, 0, 0.1);
+  margin-top: 0;
+}
+.icon1 {
+  width: 30px;            
+  height: 30px;           
+  display: inline-block; 
+  margin-bottom: 5px; 
+  background-size: cover;
+  background-color: rgba(0, 0, 0, 0.1);
+  margin-top: 0;
+  background-image: url('./images/temp.png');
+}
+.icon2 {
+  width: 30px;            
+  height: 30px;           
+  display: inline-block;  
+  background-size: cover;
+  background-color: rgba(0, 0, 0, 0.1);
+   margin-bottom: 5px; 
+  margin-top: 0;
+  background-image: url('./images/wind.png');
+}
+.icon3 {
+  width: 30px;            
+  height: 30px;           
+  display: inline-block;  
+   margin-bottom: 5px; 
+  background-size: cover;
+  background-color: rgba(0, 0, 0, 0.1);
+  margin-top: 0;
+  background-image: url('./images/humid.png');
+}
+.icon4 {
+  width: 30px;            
+  height: 30px;           
+  display: inline-block;  
+ margin-bottom: 5px; 
+  background-size: cover;
+  background-color: rgba(0, 0, 0, 0.1);
+  margin-top: 0;
+  background-image: url('./images/cloud.png');
+}
+.icon5 {
+  width: 30px;            
+  height: 30px;           
+  display: inline-block;  
+   margin-bottom: 5px; 
+  background-size: cover;
+  background-color: rgba(0, 0, 0, 0.1);
+  margin-top: 0;
+  background-image: url('./images/pressure.png');
+}
