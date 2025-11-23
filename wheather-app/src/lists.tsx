@@ -1,5 +1,19 @@
+import React from "react";
 import "./lists.css";
-function Returingwheather(prop){
+ type Weatherprop = {
+              datehours:string
+              dateminutes:string
+              ampm:string
+              temp:number
+              feelsLike:number
+              wind:number
+              humid:number
+              cloud:number
+              pressure:number
+              icon:string
+
+ }
+function Returingwheather(prop:Weatherprop){
     return(
       <div className='wheather-output'>
         <div className='paragraph1' > <span style={{marginTop: 5}}>{`${prop.datehours +":" + prop.dateminutes +" "+ prop.ampm}`}</span>  <span style={{marginTop: 5}}>{`${prop.temp}`}°C</span> <span className="icon0" style={{backgroundImage: `url("https://openweathermap.org/img/wn/${prop.icon}@4x.png")`}}></span></div>
@@ -13,4 +27,4 @@ function Returingwheather(prop){
        </div>
     )
   }
-export default Returingwheather
+export default Returingwheather;
